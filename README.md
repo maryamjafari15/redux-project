@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Redux Practice Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a practice project to learn and implement Redux in a React application. The project is built by following the tutorial from [Masood Sadri's YouTube channel](https://www.youtube.com/@MasoodSadri).
 
-Currently, two official plugins are available:
+## Purpose
+The main goal of this project is to enhance my understanding of state management using Redux and how to integrate it efficiently in a React application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Implementing Redux store, reducers, and actions
+- Managing global state efficiently
+- Connecting Redux with React components
+- Following best practices for Redux state management
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone <repository_url>
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd project-folder
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
+- React
+- Redux
+- Redux Toolkit 
+- TypeScript 
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Credits
+This project is inspired by the tutorial from [Masood Sadri](https://www.youtube.com/@MasoodSadri).
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Disclaimer
+This is a practice project and not intended for production use. The primary goal is to reinforce my understanding of Redux in a real-world application.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
